@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recs">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommendations"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:textColor="#00008B"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recType"
+        android:layout_below="@id/title"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:gravity="center"
+        android:text="You should eat more (macronutrient)"
+        android:textColor="#00008B"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/suggestMessage"
+        android:layout_below="@id/recType"
+        android:textSize="18sp"
+        android:padding="10sp"
+        android:gravity="center"
+        android:text="Grams of macronutrient based on 1 serving"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s1"
+        android:layout_below="@id/suggestMessage"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s2"
+        android:layout_below="@id/s1"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s3"
+        android:layout_below="@id/s2"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s4"
+        android:layout_below="@id/s3"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s5"
+        android:layout_below="@id/s4"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s6"
+        android:layout_below="@id/s5"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/s7"
+        android:layout_below="@id/s6"
+        android:textSize="20sp"
+        android:padding="20sp"
+        android:gravity="center"
+        android:text="Name: food Cost: $ Macro: amount"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_below="@id/s7"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:padding="15sp"
+        android:layout_marginTop="15sp"
+        />
+
+
+</RelativeLayout>

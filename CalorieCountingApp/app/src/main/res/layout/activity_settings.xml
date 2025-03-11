@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:textColor="#00008B"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/updateWeightField"
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:hint="Update Weight"
+        android:textSize="20sp"
+        android:layout_marginLeft="30sp"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/updateWeightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="275sp"
+        />
+
+    <EditText
+        android:id="@+id/updateHeightField"
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateWeightField"
+        android:hint="Update Height"
+        android:textSize="20sp"
+        android:layout_marginLeft="30sp"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/updateHeightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/updateWeightField"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="275sp"
+        />
+
+    <EditText
+        android:id="@+id/updateALField"
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateHeightButton"
+        android:hint="Update Activity Level"
+        android:textSize="20sp"
+        android:layout_marginLeft="30sp"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/updateALButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/updateHeightButton"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="275sp"
+        />
+
+    <EditText
+        android:id="@+id/updateGoal"
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateALField"
+        android:hint="Goal"
+        android:textSize="20sp"
+        android:layout_marginLeft="30sp"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/updateGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@+id/updateALButton"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="275sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="| 1 = Maintain | 2 = Gain | 3 = Lose |"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:layout_below="@id/updateGoal"
+        />
+
+    <Button
+        android:id="@+id/dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Theme"
+        android:layout_below="@+id/updateGoal"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="50sp"
+        />
+
+    <Button
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Theme"
+        android:layout_below="@+id/updateGoal"
+        android:layout_marginTop="35sp"
+        android:padding="10sp"
+        android:layout_marginLeft="225sp"
+        />
+
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_below="@+id/light"
+        android:layout_marginTop="35sp"
+        android:padding="15sp"
+        android:gravity="center"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
+        android:textSize="15sp"
+        />
+</RelativeLayout>

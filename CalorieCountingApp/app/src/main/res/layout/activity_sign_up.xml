@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up:"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:textColor="#00008B"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/title"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/username"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (lbs)"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/password"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height (in)"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/weight"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/activityLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Activity (1 -> not Active, 5 -> Most Active)"
+        android:padding="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/height"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:inputType="number"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityLevel">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:layout_marginStart="50sp"
+            />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Female"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="-47sp"
+
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSelect"
+        android:layout_marginStart="270sp"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:text="Sign Up"
+        android:textSize="15sp"
+        />
+</RelativeLayout>
