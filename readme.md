@@ -11,7 +11,3 @@ For exaple if I ate an abundance of steak earlier, it would recomend I eat carbs
   <img width="444" height="875" alt="calorie5" src="https://github.com/user-attachments/assets/e7964522-4339-4887-a44b-fe1d30ec08b8" style="width: 15%; height: auto; object-fit: contain;"/>
   <img width="296" height="640" alt="calorie6" src="https://github.com/user-attachments/assets/1c2656f4-9a63-44c8-ad53-1d9ab7f5a0ec" style="width: 15%; height: auto; object-fit: contain;"/>
 </div>
-
-
-
-style="width: 15%; height: auto; object-fit: contain;"
