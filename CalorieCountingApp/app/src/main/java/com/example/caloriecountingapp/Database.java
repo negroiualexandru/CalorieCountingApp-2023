@@ -111,8 +111,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor exists = db.rawQuery("SELECT name FROM sqlite_master WHERE type='table' AND name='recs'", null);
         String[] selection = {type};
-        Cursor elements = db.rawQuery("SELECT food, cost, amount FROM recs WHERE type = ?", selection);
-        if( (exists.getCount() == 1 && elements.getCount() == 0) || exists.getCount() == 0) {
+        if( (exists.getCount() == 1) || exists.getCount() == 0) {
             db.execSQL("create Table IF NOT EXISTS recs(food TEXT, cost INTEGER, type TEXT, amount INTEGER)");
             db.execSQL("INSERT INTO recs(food, cost, type, amount) VALUES('Avocado', 2, 'fat', 22);");
             db.execSQL("INSERT INTO recs(food, cost, type, amount) VALUES('Almond', 10, 'fat', 45);");
@@ -137,10 +136,8 @@ public class Database extends SQLiteOpenHelper {
             db.execSQL("INSERT INTO recs(food, cost, type, amount) VALUES('Bread', 2, 'carb', 25);");
             db.execSQL("INSERT INTO recs(food, cost, type, amount) VALUES('Pasta', 4, 'carb', 40);");
             db.execSQL("INSERT INTO recs(food, cost, type, amount) VALUES('Potatoes', 1, 'carb', 30);");
-
-            elements = db.rawQuery("SELECT food, cost, amount FROM recs WHERE type = ?", selection);
         }
-        return elements;
+        return db.rawQuery("SELECT food, cost, amount FROM recs WHERE type = ?", selection);
     }
 
     public void updateHeight (int h, String u) {
